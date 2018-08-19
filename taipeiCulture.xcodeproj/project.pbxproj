@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		BC1E914C2129435B00C1A482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E914B2129435B00C1A482 /* AppDelegate.swift */; };
-		BC1E914E2129435B00C1A482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E914D2129435B00C1A482 /* ViewController.swift */; };
 		BC1E91512129435B00C1A482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1E914F2129435B00C1A482 /* Main.storyboard */; };
 		BC1E91532129436700C1A482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1E91522129436700C1A482 /* Assets.xcassets */; };
 		BC1E91562129436700C1A482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1E91542129436700C1A482 /* LaunchScreen.storyboard */; };
+		BC1E915E212944AA00C1A482 /* TaipeiCultureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E915D212944A900C1A482 /* TaipeiCultureTableViewController.swift */; };
+		BC1E91602129518B00C1A482 /* Culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E915F2129518B00C1A482 /* Culture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC1E91482129435B00C1A482 /* taipeiCulture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taipeiCulture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1E914B2129435B00C1A482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC1E914D2129435B00C1A482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC1E91502129435B00C1A482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC1E91522129436700C1A482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC1E91552129436700C1A482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC1E91572129436700C1A482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1E915D212944A900C1A482 /* TaipeiCultureTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiCultureTableViewController.swift; sourceTree = "<group>"; };
+		BC1E915F2129518B00C1A482 /* Culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,9 @@
 		BC1E914A2129435B00C1A482 /* taipeiCulture */ = {
 			isa = PBXGroup;
 			children = (
+				BC1E915F2129518B00C1A482 /* Culture.swift */,
 				BC1E914B2129435B00C1A482 /* AppDelegate.swift */,
-				BC1E914D2129435B00C1A482 /* ViewController.swift */,
+				BC1E915D212944A900C1A482 /* TaipeiCultureTableViewController.swift */,
 				BC1E914F2129435B00C1A482 /* Main.storyboard */,
 				BC1E91522129436700C1A482 /* Assets.xcassets */,
 				BC1E91542129436700C1A482 /* LaunchScreen.storyboard */,
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC1E914E2129435B00C1A482 /* ViewController.swift in Sources */,
+				BC1E915E212944AA00C1A482 /* TaipeiCultureTableViewController.swift in Sources */,
+				BC1E91602129518B00C1A482 /* Culture.swift in Sources */,
 				BC1E914C2129435B00C1A482 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
