@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F3C4B760FE7E27A8EE63E13 /* Pods_taipeiCulture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E560755AF5CF6CF83A6F935 /* Pods_taipeiCulture.framework */; };
 		BC1E914C2129435B00C1A482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E914B2129435B00C1A482 /* AppDelegate.swift */; };
 		BC1E91512129435B00C1A482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1E914F2129435B00C1A482 /* Main.storyboard */; };
 		BC1E91532129436700C1A482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1E91522129436700C1A482 /* Assets.xcassets */; };
 		BC1E91562129436700C1A482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1E91542129436700C1A482 /* LaunchScreen.storyboard */; };
 		BC1E915E212944AA00C1A482 /* TaipeiCultureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E915D212944A900C1A482 /* TaipeiCultureTableViewController.swift */; };
 		BC1E91602129518B00C1A482 /* Culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E915F2129518B00C1A482 /* Culture.swift */; };
+		BC1E91622129CBC500C1A482 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E91612129CBC500C1A482 /* DetailViewController.swift */; };
+		BC7A0271212C475F00378E12 /* SpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A0270212C475F00378E12 /* SpotViewController.swift */; };
+		BC983D72212BE453008C861B /* TaipeiSpotsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC983D71212BE453008C861B /* TaipeiSpotsTableViewController.swift */; };
+		BC983D74212BE7A5008C861B /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC983D73212BE7A5008C861B /* SpotTableViewCell.swift */; };
+		BCD73904212BCFC900FDA8D9 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD73903212BCFC900FDA8D9 /* Park.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E560755AF5CF6CF83A6F935 /* Pods_taipeiCulture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taipeiCulture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6590C01D336E50A552526A16 /* Pods-taipeiCulture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taipeiCulture.release.xcconfig"; path = "Pods/Target Support Files/Pods-taipeiCulture/Pods-taipeiCulture.release.xcconfig"; sourceTree = "<group>"; };
+		A1002D3FEA00B47DFD41FBD6 /* Pods-taipeiCulture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taipeiCulture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taipeiCulture/Pods-taipeiCulture.debug.xcconfig"; sourceTree = "<group>"; };
 		BC1E91482129435B00C1A482 /* taipeiCulture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taipeiCulture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1E914B2129435B00C1A482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC1E91502129435B00C1A482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		BC1E91572129436700C1A482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC1E915D212944A900C1A482 /* TaipeiCultureTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiCultureTableViewController.swift; sourceTree = "<group>"; };
 		BC1E915F2129518B00C1A482 /* Culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culture.swift; sourceTree = "<group>"; };
+		BC1E91612129CBC500C1A482 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BC7A0270212C475F00378E12 /* SpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotViewController.swift; sourceTree = "<group>"; };
+		BC983D71212BE453008C861B /* TaipeiSpotsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiSpotsTableViewController.swift; sourceTree = "<group>"; };
+		BC983D73212BE7A5008C861B /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
+		BCD73903212BCFC900FDA8D9 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F3C4B760FE7E27A8EE63E13 /* Pods_taipeiCulture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14079AEC4A644E5404306744 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1002D3FEA00B47DFD41FBD6 /* Pods-taipeiCulture.debug.xcconfig */,
+				6590C01D336E50A552526A16 /* Pods-taipeiCulture.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EF1B278A61F915614439BDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E560755AF5CF6CF83A6F935 /* Pods_taipeiCulture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC1E913F2129435B00C1A482 = {
 			isa = PBXGroup;
 			children = (
 				BC1E914A2129435B00C1A482 /* taipeiCulture */,
 				BC1E91492129435B00C1A482 /* Products */,
+				14079AEC4A644E5404306744 /* Pods */,
+				9EF1B278A61F915614439BDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +91,13 @@
 			isa = PBXGroup;
 			children = (
 				BC1E915F2129518B00C1A482 /* Culture.swift */,
+				BCD73903212BCFC900FDA8D9 /* Park.swift */,
 				BC1E914B2129435B00C1A482 /* AppDelegate.swift */,
 				BC1E915D212944A900C1A482 /* TaipeiCultureTableViewController.swift */,
+				BC1E91612129CBC500C1A482 /* DetailViewController.swift */,
+				BC983D71212BE453008C861B /* TaipeiSpotsTableViewController.swift */,
+				BC983D73212BE7A5008C861B /* SpotTableViewCell.swift */,
+				BC7A0270212C475F00378E12 /* SpotViewController.swift */,
 				BC1E914F2129435B00C1A482 /* Main.storyboard */,
 				BC1E91522129436700C1A482 /* Assets.xcassets */,
 				BC1E91542129436700C1A482 /* LaunchScreen.storyboard */,
@@ -74,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC1E915A2129436700C1A482 /* Build configuration list for PBXNativeTarget "taipeiCulture" */;
 			buildPhases = (
+				322FF77506D9DF9EC8C4DAE5 /* [CP] Check Pods Manifest.lock */,
 				BC1E91442129435B00C1A482 /* Sources */,
 				BC1E91452129435B00C1A482 /* Frameworks */,
 				BC1E91462129435B00C1A482 /* Resources */,
+				FC91A3563EB59CBE64AB8B71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +174,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		322FF77506D9DF9EC8C4DAE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taipeiCulture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC91A3563EB59CBE64AB8B71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-taipeiCulture/Pods-taipeiCulture-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taipeiCulture/Pods-taipeiCulture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC1E91442129435B00C1A482 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7A0271212C475F00378E12 /* SpotViewController.swift in Sources */,
+				BC983D74212BE7A5008C861B /* SpotTableViewCell.swift in Sources */,
+				BCD73904212BCFC900FDA8D9 /* Park.swift in Sources */,
 				BC1E915E212944AA00C1A482 /* TaipeiCultureTableViewController.swift in Sources */,
 				BC1E91602129518B00C1A482 /* Culture.swift in Sources */,
 				BC1E914C2129435B00C1A482 /* AppDelegate.swift in Sources */,
+				BC983D72212BE453008C861B /* TaipeiSpotsTableViewController.swift in Sources */,
+				BC1E91622129CBC500C1A482 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +369,7 @@
 		};
 		BC1E915B2129436700C1A482 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1002D3FEA00B47DFD41FBD6 /* Pods-taipeiCulture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +387,7 @@
 		};
 		BC1E915C2129436700C1A482 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6590C01D336E50A552526A16 /* Pods-taipeiCulture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

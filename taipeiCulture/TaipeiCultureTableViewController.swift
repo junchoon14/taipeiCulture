@@ -1,10 +1,10 @@
 //
 //  TaipeiCultureTableViewController.swift
 //  taipeiCulture
-//
+//http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=35aa3c53-28fb-423c-91b6-2c22432d0d70&format=json
 //  Created by Jason Hsu on 2018/8/19.
 //  Copyright © 2018 junchoon. All rights reserved.
-//
+//http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=bf073841-c734-49bf-a97f-3757a6013812&format=json
 
 import UIKit
 import Foundation
@@ -12,14 +12,13 @@ import Foundation
 class TaipeiCultureTableViewController: UITableViewController {
     
     var cultureEvents = [Event]()
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
        
         if let urlStr = "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=35aa3c53-28fb-423c-91b6-2c22432d0d70&format=json".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), let url = URL(string: urlStr) {
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-                if let data = data, let dic = try? JSONSerialization.jsonObject(with: data) as? [String: Any], let results = dic?["results"] as? [[String: Any]] {
+                if let data = data, let dic = try? JSONSerialization.jsonObject(with: data) as? [String: Any], let result = dic?["result"] as? [String: Any], let results = result["results"] as? [[String: Any]] {
                     for cultureDic in results {
                         if let event = Event(json: cultureDic) {
                             self.cultureEvents.append(event)
@@ -30,11 +29,9 @@ class TaipeiCultureTableViewController: UITableViewController {
                     }
                 }
             }
-            print(self.cultureEvents)
+            print(cultureEvents)
             task.resume()
         }
-
-       
     }
 
     // MARK: - Table view data source
@@ -45,29 +42,35 @@ class TaipeiCultureTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       print(cultureEvents.count)
         return cultureEvents.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         let event = cultureEvents[indexPath.row]
         cell.textLabel?.text = event.EventName
+        cell.textLabel?.numberOfLines = 0
         cell.detailTextLabel?.text = event.ShowGroupName
         
-        let url = URL(string: event.ImageFile)
-        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if let data = data {
-                DispatchQueue.main.async {
-                    cell.imageView?.image = UIImage(data: data)
-                }
-            }
-        }
-        task.resume()
-
         return cell
     }
+    
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//        let event = cultureEvents[indexPath.row]
+//
+//        if let detailController = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+//            detailController.eventImage = event.ImageFile
+//            detailController.modalTransitionStyle = .partialCurl
+//            present(detailController, animated: true, completion: nil)
+//        }
+//
+//
+//    }
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -104,14 +107,14 @@ class TaipeiCultureTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        if let detailController = segue.destination as? DetailViewController, let row = tableView?.indexPathForSelectedRow!.row {
+            detailController.eventDetail = cultureEvents[row]
+        }
     }
-    */
-
 }
